@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class ThreeSum {
    public static void main(String []args) {
-      System.out.println("Hello World"); // prints Hello World
       
       int[] arr = {-1, 0, 1, 2, -1, -4};
       ArrayList<int[]> result = findThreeSum(arr);
