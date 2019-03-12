@@ -9,12 +9,12 @@ public class HouseRobber {
 	   }
 	   
 	  static int maxSum(int arr[]) {
-	  	if(nums == null || nums.length == 0){
+	  	if(arr == null || arr.length == 0){
             		return 0;
         	}
         
-        	if(nums.length == 1){
-            		return nums[0];
+        	if(arr.length == 1){
+            		return arr[0];
         	}
 	  
 	        int excl = 0;
