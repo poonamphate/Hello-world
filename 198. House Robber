@@ -9,6 +9,14 @@ public class HouseRobber {
 	   }
 	   
 	  static int maxSum(int arr[]) {
+	  	if(nums == null || nums.length == 0){
+            		return 0;
+        	}
+        
+        	if(nums.length == 1){
+            		return nums[0];
+        	}
+	  
 	        int excl = 0;
 	        int incl = arr[0];
 	        for (int i = 1; i < arr.length; i++) {
