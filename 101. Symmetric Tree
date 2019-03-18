@@ -57,6 +57,9 @@ public class BinaryTree {
 			return left == right;
 		}
 		
+		if(left.data!=right.data){
+        		return false;
+		}
 		return isSymmetricUtil(left.left, right.right) && isSymmetricUtil(left.right, right.left);
 	}
 	
