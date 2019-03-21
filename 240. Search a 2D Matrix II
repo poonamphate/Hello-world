@@ -23,22 +23,31 @@ public class MyFirstJavaProgram {
    }
    
    static boolean isPresent(int[][] arr, int target){
-       int n = arr.length;
+       
+       if(matrix == null || matrix.length == 0){
+            return false;
+       }
+       
+       int m = matrix.length;
+       int n = matrix[0].length;
+       
        if(target < arr[0][0] || target > arr[n-1][n-1] ){
            return false;
        }
-       int i = 0, j = n-1;
-       while(i < n && j>=0){
-           if(target > arr[i][j]){
-               i++;
-           }
-           else if(target < arr[i][j]){
-               j--;
-           }
-           else{
-               return true;
-           }
-       }
+       
+       int r = 0, c = n-1;
+       while(r<matrix.length &&  c>=0){
+            if(matrix[r][c] == target){
+                return true;
+            }
+            
+            else if(matrix[r][c] > target){
+                c--;
+            }
+            else{
+                r++;
+            }
+        }
        
        return false;
    }
