@@ -18,7 +18,9 @@ Sample Output
 Explanation
 There are 3 positive numbers, 2 negative numbers and 1 zero in the array. 
 Fraction of the positive numbers, negative numbers and zeroes are 36=0.500, 26=0.333 and 16=0.167 respectively.
-Note This challenge introduces precision problems. You can even print output to 4 decimal places and above but only the difference at 3rd decimal digit is noted. That is the reason you'll notice testcases have much higher precision (more decimal places) than required. 
+Note This challenge introduces precision problems. You can even print output to 4 decimal places and above but 
+only the difference at 3rd decimal digit is noted. That is the reason you'll notice testcases have much higher 
+precision (more decimal places) than required. 
 Answers with absolute error upto 10−4 will be accepted.
 */
 
